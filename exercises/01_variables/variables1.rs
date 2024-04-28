@@ -5,9 +5,9 @@
 // Execute `rustlings hint variables1` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+/// Déclarer une variable avec le mot clé: let
 
 fn main() {
-    x = 5;
+    let x = 5; // le mot clé
     println!("x has the value {}", x);
 }

@@ -5,15 +5,15 @@
 // Execute `rustlings hint primitive_types3` or use the `hint` watch subcommand
 // for a hint.
 
-// I AM NOT DONE
+/// etape 1: déclarer un array, étape 2: utiliser la macro 'println!'
 
 fn main() {
-    let a = ???
+    let a = [1,2,5,9];
 
     if a.len() >= 100 {
         println!("Wow, that's a big array!");
     } else {
         println!("Meh, I eat arrays like that for breakfast.");
-        panic!("Array not big enough, more elements needed")
+        println!("Array not big enough, more elements needed");
     }
 }

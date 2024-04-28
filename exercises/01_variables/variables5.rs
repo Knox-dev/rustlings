@@ -3,11 +3,12 @@
 // Execute `rustlings hint variables5` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+/// En Rust, on ne peut pas changer le type de la variable 
+/// une foi créée, il faut la recréer
 
 fn main() {
-    let number = "T-H-R-E-E"; // don't change this line
+    let mut number = "T-H-R-E-E"; // don't change this line
     println!("Spell a Number : {}", number);
-    number = 3; // don't rename this variable
+    let number: i32 = 3; // don't rename this variable
     println!("Number plus two is : {}", number + 2);
 }

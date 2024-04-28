@@ -5,8 +5,8 @@
 // Execute `rustlings hint intro2` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+/// le point-virgule marque la fin de l'expression
 
 fn main() {
-    printline!("Hello there!")
+    println!("Hello there!"); // lel point ajouté
 }

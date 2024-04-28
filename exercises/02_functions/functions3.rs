@@ -3,10 +3,10 @@
 // Execute `rustlings hint functions3` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+/// Il faut passer les arguments dans la fonction, lors de son appel
 
 fn main() {
-    call_me();
+    call_me(8); // l'argument doit être transmit lors de son appel
 }
 
 fn call_me(num: u32) {

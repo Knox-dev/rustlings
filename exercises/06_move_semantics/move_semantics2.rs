@@ -5,22 +5,21 @@
 // Execute `rustlings hint move_semantics2` or use the `hint` watch subcommand
 // for a hint.
 
-// I AM NOT DONE
+/// rendre mutable vec0 afin de le modifier via fill_vec
 
 #[test]
-fn main() {
+fn test_fill_vec() {
     let vec0 = vec![22, 44, 66];
 
-    let vec1 = fill_vec(vec0);
+    let vec1 = fill_vec(&vec0); // Passer vec0 par référence à fill_vec
 
-    assert_eq!(vec0, vec![22, 44, 66]);
-    assert_eq!(vec1, vec![22, 44, 66, 88]);
+    assert_eq!(vec0, vec![22, 44, 66]); // Vérifier que vec0 n'a pas été modifié
+    assert_eq!(vec1, vec![22, 44, 66, 88]); // Vérifier que vec1 contient les éléments attendus
 }
 
-fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
-    let mut vec = vec;
+fn fill_vec(mut vec5: &Vec<i32>) -> Vec<i32> {
+    let mut new_vec = vec5.clone(); // Cloner le vecteur pour pouvoir le modifier
+    new_vec.push(88); // Ajouter l'élément 88 au vecteur cloné
 
-    vec.push(88);
-
-    vec
+    new_vec // Retourner le vecteur modifié
 }

@@ -5,15 +5,21 @@
 //
 // Execute `rustlings hint if2` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
+/// D'après la déclaration de foo_if_fizz, Cargo s'attend à ce que 
+/// la fonction retourne un "1" et nom un i32 tel que 1
+
 
 pub fn foo_if_fizz(fizzish: &str) -> &str {
     if fizzish == "fizz" {
         "foo"
+    } else if fizzish == "fuzz" {
+        "bar"
     } else {
-        1
+        "baz"
     }
 }
+
+
 
 // No test changes needed!
 #[cfg(test)]

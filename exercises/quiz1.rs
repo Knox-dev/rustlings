@@ -13,10 +13,16 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
+/// bien définir les types d'entrée et de sortie de la fonction
 
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(number_apple: i32) -> i32 {
+    if number_apple <= 40 {
+        number_apple * 2
+    } else {
+        number_apple
+    }
+}
 
 // Don't modify this function!
 #[test]
@@ -25,6 +31,7 @@ fn verify_test() {
     let price2 = calculate_price_of_apples(40);
     let price3 = calculate_price_of_apples(41);
     let price4 = calculate_price_of_apples(65);
+
 
     assert_eq!(70, price1);
     assert_eq!(80, price2);
